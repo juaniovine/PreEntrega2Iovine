@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   link al css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>RYC - Edificamos confianza</title>
+  </head>
+  <body>
+    <!--    header = encabezado con menu de navegacion    -->
+    <header>
+      <!--  ver como insertar el logo -->
+      <!--  menu  -->
+      <nav class="menu">
+        <div class="logo-menu">
+          <img
+            src="assets/ryc-logo-small.png"
+            alt="Logo de R Y C constructura"
+          />
+        </div>
+        <ul class="formato-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/nosotros.html">Nosotros</a></li>
+          <li><a href="pages/proyectos.html">Proyectos</a>
+          <!--  setup de submeny -->
+            <ul class="submenu">
+              <li><a href="pages/proyectos.html#diseno">Diseño</a></li>
+              <li>
+                <a href="pages/proyectos.html#planificacion">Planificacion</a>
+              </li>
+              <li>
+                <a href="pages/proyectos.html#construcciones">Construcciones</a>
+              </li>
+              <li>
+                <a href="pages/proyectos.html#control-calidad">Control de calidad</a>
+            </ul>
+            </li>
+          
+
+          <li>
+            <a href="pages/desarrollos.html">Desarrollos Inmobiliarios</a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="pages/desarrollos.html#fotos-comercial">Comercial</a>
+            </li>
+            <li>
+              <a href="pages/desarrollos.html#fotos-industrial">Industrial</a>
+            </li>
+            <li>
+              <a href="pages/desarrollos.html#fotos-residencial">Residencial</a>
+            </li>
+          </ul>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      
+    
+    </header>
+
+    <!--    *** FLEX BOX para imagen y texto ***   -->
+    <main class="main-box">
+      <h1>Construcciones confiables con materiales de calidad</h1>
+      <section class="flex-index">
+        <div class="flex-box top-left">
+          <!--  dividir en columnas imagen - texto-->
+          <!--h2>Cuadro 1</!--h2-->
+
+          <img
+            src="assets/sustentabilidad/eficiencia-energetica/paneles-solares.avif"
+            alt="instalacion paneles solares"/>
+        </div>
+        <div class="flex-box top-right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt
+            tempore enim aliquid maxime soluta, vitae ratione ea quia laudantium
+            itaque beatae officiis aperiam similique dolor, consequuntur facilis
+            tenetur minus?
+          </p>
+        </div>
+      <!--class="section-index-med"-->
+        <div class="flex-box middle-left">
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            ipsa, doloribus assumenda nobis ratione ad nam laboriosam, dolor
+            amet dignissimos nesciunt cupiditate repudiandae quaerat
+            exenemo sequi, eos
+            quam delenit
+          </p>
+        </div>
+        <div class="flex-box middle-right">
+          <img src="assets/residencial/casa05.jpg" alt="Casa con jardín y pileta" />
+        </div>
+      </section>
+      <!--  *** GRID para la galeria***-->
+      <section class="grid-index-bottom">
+        <div class="grid-index-b1">
+          <img src="assets/residencial/edificio02.jpg" alt="edificio01">
+        </div>
+        <div class="grid-index-b2">
+          <img src="assets/comercial/local04.jpg" alt="local01">
+        </div>
+        <div class="grid-index-b3">
+        <img src="assets/residencial/casa02.jpg" alt="casa02">
+        </div>
+      </section>
+      <!--  *** GRID para sección imagenes-->
+      <section></section>
+    </main>
+
+    <!--    footer = pie de pagina, logo, redes, texto   -->
+    <footer>
+      <!--  espacio para redes sociales-->
+      <section>
+        <h5>RYC Construcciones</h5>
+        <ul>
+          <li>CUIT</li>
+          <li>Dirección</li>
+          <li>
+            mail@contacto.com
+            <button class="footer-boton-formulario-contacto">
+              <a href="pages/contacto.html">Contacto</a>
+            </button>
+          </li>
+          <li>telefono</li>
+        </ul>
+      </section>
+      <a href="">Instagram</a>
+      <a href="">Facebook</a>
+      <a href="">Youtube</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="../css/style.css"/> 
+    <title>RYC - Contactos</title>
+  </head>
+  <body>
+    <header>
+      <!-- Enlace Absoluto-->
+      <nav class="menu">
+        <div class="logo-menu">
+          <img src="../assets/ryc-logo-small.png" alt="Logo de R Y C constructura">
+        </div>
+        <ul class="formato-menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+              <ul class="submenu">
+                <li>      <!--submenu de proyectos-->
+                  <a href="proyectos.html#diseno">Diseño</a></li>
+                <li>
+                  <a href="proyectos.html#planificacion">Planificacion</a></li>
+                 <li>
+                    <a href="proyectos.html#construcciones">Construcciones</a></li>
+                 <li>
+                    <a href="proyectos.html#control-calidad">Control de calidad</a>
+                 </li>
+              </ul>
+          <li><a href="desarrollos.html">Desarrollos Inmobiliarios</a></li>
+              <ul class="submenu">
+                <li>
+                  <a href="desarrollos.html#fotos-comercial">Comercial</a>
+                </li>
+                <li>
+                  <a href="desarrollos.html#fotos-industrial">Industrial</a>
+                </li>
+                <li>
+                  <a href="pages/desarrollos.html#fotos-residencial">Residencial</a>
+                </li>
+              </ul>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-box">
+      <form id="formulario-contacto">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" placeholder="Ingresa tu nombre" />
+        </div>
+
+        <div>
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            name="apellido"
+            placeholder="Ingresa tu apellido"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Ingresa tu email" />
+        </div>
+
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            name="Comentarios"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Deje su mensaje">
+          </textarea>
+
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar formulario</button>
+      </form>
+      <!--  ver como hacer dos columnas para la datos -->
+      <!--  Separar con Flex Box-->
+      <section>
+        <h5>RYC Construcciones</h5>
+        <ul>
+          <li>CUIT</li>
+          <li>Dirección</li>
+          <li>info@ryc.com </li>
+            
+          <li>telefono</li>
+        </ul>
+      </section>
+      <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13143.065515899489!2d-58.45330976376952!3d-34.55947006030774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1681428396481!5m2!1ses-419!2sar"
+        width="200"
+        height="150"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <!--  *** Agrego seccion GRID para galeria-->
+    <section>
+      
+    </section>
+    </main>
+
+    <footer>
+      
+      <!--  espacio para redes sociales-->
+      <section>
+        <h5>RYC Construcciones</h5>
+        <ul>
+          <li>CUIT</li>
+          <li>Dirección</li>
+          <li>mail@contacto.com 
+            <button class="footer-boton-formulario-contacto">
+              <a href="contacto.html">Contacto</a>
+            </button></li>
+          <li>telefono</li>
+        </ul>
+      </section>
+      <a href="">Instagram</a>
+      <a href="">Facebook</a>
+      <a href="">Youtube</a>
+    </footer>
+  </body>
+</html>

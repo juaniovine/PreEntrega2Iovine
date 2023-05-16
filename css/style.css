@@ -1,0 +1,313 @@
+/* comentario */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,100;0,400;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+
+/*** estilos generales ***/
+
+/* reset para sacar estilos de mi CSS */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/*** configuracion de imagenes ***/
+
+img {
+  display: block;
+  max-width: 100%; /*adaptable al tamaño de la pantalla*/
+  
+}
+
+/*detallo las fuentes */
+h1 {
+  font-family: "Poppins";
+  text-align: center;
+}
+
+h5 {
+  font-size: medium;
+}
+
+p {
+  font-family: "Inter";
+}
+
+/*  encabezado viejo
+header {
+        background-color: #F6F1E9;
+        
+        background-image: url(../assets/background/background-construction-site-graphite-towers.jpg);
+        
+        opacity: 0.98;
+        background-position: center;
+        background-size: contain;
+        background-size: cover;
+    }
+*/
+
+header {
+  min-height: 5px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+/*  encabezado v2    */
+/* menu de navegacion */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+nav {
+  background-color: #56423d;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  opacity: 1;
+  z-index: 3; /*mantengo el menu al frente*/
+  /*text-align: right; /*llevo el menu a la derecha*/
+  /*   border-right: 200px;  ?? */
+  width: 100%; /*fijar menu responsive*/
+  top: 0; /*para fijar el menu al tope*/
+  border: solid #56423d5e 1px;
+  border-radius: 1px;
+}
+
+.formato-menu a {
+  color: #fde8e9;
+  /*border: solid;*/
+  border-width: none;
+  border-radius: 1%;
+  background-color: #56423d;
+  text-decoration: none;
+  padding-right: 15px;
+  
+}
+
+.main-box {
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fde8e9;
+  margin-top: 180px;
+  
+  
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0px 7px;
+  font-size: 1rem;
+  font-family: "Lora";
+  padding-top: 70px;
+}
+
+.logo-menu {
+  display: inline;
+}
+
+/*** Index con FLEXBOX ***/
+
+/*
+.index-top {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.index-low {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+}
+*/
+
+.flex-index {
+  display: flex; /*declaro el formato flexible*/
+  /*flex-direction: column; -- si quiero acomodar mis objetos en forma de columna*/
+  flex-wrap: wrap; /*hace que sea responsive al tamaño de la pantalla - tambien puedo usar el flex-flow: row wrap; */
+  justify-content: center; /* dejo espacio entre mis cajas  */
+  align-items: stretch;
+  gap: 20px
+
+}
+
+.flex-box {
+  /*padding: 10px;*/
+  width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: large;
+  text-align: center;
+  object-fit: cover;
+}
+
+.top-left {
+  background-color: #fde8e9;
+}
+
+.top-right {
+  background-color: #a17d74ec;
+  color: #fde8e9;
+  
+}
+
+.middle-left {
+  background-color: #a17d74ec;
+  color: #fde8e9;
+  
+ 
+}
+
+.middle-right {
+  background-color: #fde8e9;
+
+}
+
+.grid-index-bottom {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+      'area1 area2 area3';
+  padding: 50px;
+}
+
+.grid-index-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px grey;
+}
+
+.grid-index-b1 {
+  grid-area: area1;
+}
+.grid-index-b2 {
+  grid-area: area2;
+}
+.grid-index-b3 {
+  grid-area: area3;
+}
+
+/*** Nosotros FLEX***/
+
+.nosotros-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  
+}
+
+.mision-left {
+  width: 500px;
+}
+
+.mision-right {
+  width: 500px;
+}
+
+.vision-left {
+  width: 500px; 
+}
+
+.vision-right {
+  width: 500px;
+}
+
+.valores-left {
+  width: 500px;
+}
+
+.valores-right {
+  width: 500px;
+}
+
+/*** Desarrollos inmobiliarios***/
+
+.galery-nav-button li {
+  text-align: center;
+  display: inline-block;
+  box-shadow: 1px 1px 2px 1px grey;
+  font-family: "Lora";
+  text-decoration: none;
+}
+
+.galeria {
+  padding: 10px;
+  
+}
+
+.galeria-comercial {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 
+    'pic1 pic1 pic2'
+    'pic1 pic1 pic3';
+}
+
+.pic1 {
+  grid-area: 'pic1';
+}
+.pic2 {
+  grid-area: 'pic2';
+}
+.pic3 {
+  grid-area: 'pic3';
+}
+/*.pic4 {
+  grid-area: 'pic4';
+}
+.pic5 {
+  grid-area: 'pic5';
+}
+.pic6 {
+  grid-area: 'pic6';
+}
+.pic7 {
+  grid-area: 'pic7';
+}
+.pic8 {
+  grid-area: 'pic8';
+}
+.pic9 {
+  grid-area: 'pic9';
+}
+.pic10 {
+  grid-area: 'pic10';
+}
+.pic11 {
+  grid-area: 'pic11';
+}
+.pic12 {
+  grid-area: 'pic12';
+}
+.pic13 {
+  grid-area: 'pic13';
+}
+
+/***  Fin desarrollos inmobiliarios ***/
+
+.submenu {
+  display: none;
+}
+
+
+/***  configuracion de footer ***/
+
+footer {
+  background-color: #beb2c8;
+  padding: 5px 0 0 0.25%;
+}
+
+.footer-boton-formulario-contacto {
+  background-color: #afc2d5;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
