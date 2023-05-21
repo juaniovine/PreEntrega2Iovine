@@ -3,6 +3,29 @@
 
 /*** estilos generales ***/
 
+:root{
+  --bs-breakpoint-sm: 480px;
+  --bs-link-color: #56423d;
+  --bs-link-hover-color: #56423d;
+}
+
+.btn-primary {
+  --bs-btn-color: #fde8e9;
+  --bs-btn-bg: #a8847c;
+  --bs-btn-border-color: #a8847c;
+  --bs-btn-hover-color: #fde8e9;
+  --bs-btn-hover-bg: #916b63;
+  --bs-btn-hover-border-color: #a8847c;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fde8e9;
+  --bs-btn-active-bg: #a8847c;
+  --bs-btn-active-border-color: #a8847c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fde8e9;
+  --bs-btn-disabled-bg: #a8847c;
+  --bs-btn-disabled-border-color: #a8847c;
+}
+
 /* reset para sacar estilos de mi CSS */
 * {
   margin: 0;
@@ -32,18 +55,6 @@ p {
   font-family: "Inter";
 }
 
-/*  encabezado viejo
-header {
-        background-color: #F6F1E9;
-        
-        background-image: url(../assets/background/background-construction-site-graphite-towers.jpg);
-        
-        opacity: 0.98;
-        background-position: center;
-        background-size: contain;
-        background-size: cover;
-    }
-*/
 
 header {
   min-height: 5px;
@@ -62,23 +73,27 @@ header {
   
 }
 
-nav {
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-collapse {
+  justify-content: right;
+  padding-right: 30px;
+}
+
+.container-fluid {
   background-color: #56423d;
-  display: flex;
-  padding: 10px 10px 10px 10px;
-  opacity: 1;
-  z-index: 3; /*mantengo el menu al frente*/
-  /*text-align: right; /*llevo el menu a la derecha*/
-  /*   border-right: 200px;  ?? */
-  width: 100%; /*fijar menu responsive*/
-  top: 0; /*para fijar el menu al tope*/
-  border: solid #56423d5e 1px;
-  border-radius: 1px;
+}
+
+.nav-link:hover {
+  font-size: 1.05rem;
+  
 }
 
 .formato-menu a {
   color: #fde8e9;
-  /*border: solid;*/
   border-width: none;
   border-radius: 1%;
   background-color: #56423d;
@@ -91,9 +106,8 @@ nav {
   border-radius: 10px;
   width: 100%;
   background-color: #fde8e9;
-  margin-top: 180px;
-  
-  
+  margin-top: 169px;
+  padding: 20px;
 }
 
 .menu li {
@@ -110,43 +124,32 @@ nav {
 
 /*** Index con FLEXBOX ***/
 
-/*
-.index-top {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.index-low {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 1em;
-}
-*/
-
 .flex-index {
   display: flex; /*declaro el formato flexible*/
   /*flex-direction: column; -- si quiero acomodar mis objetos en forma de columna*/
   flex-wrap: wrap; /*hace que sea responsive al tamaño de la pantalla - tambien puedo usar el flex-flow: row wrap; */
-  justify-content: center; /* dejo espacio entre mis cajas  */
+  justify-content: space-evenly; /* dejo espacio entre mis cajas  */
   align-items: stretch;
-  gap: 20px
-
+  gap: 20px;
 }
 
 .flex-box {
-  /*padding: 10px;*/
-  width: 480px;
+  width: 460px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   font-size: large;
   text-align: center;
   object-fit: cover;
+  border-radius: 10px;
 }
 
+.flex-box img {
+  border-radius: 10px;
+}
 .top-left {
   background-color: #fde8e9;
+    
 }
 
 .top-right {
@@ -167,17 +170,17 @@ nav {
 
 }
 
-.grid-index-bottom {
+
+.grid-index {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   grid-template-rows: auto;
-  grid-template-areas: 
-      'area1 area2 area3';
+  grid-template-areas: auto;
   padding: 50px;
 }
 
-.grid-index-bottom img {
+.grid-index img {
   width: 100%;
   height: 100%;
   object-fit: cover; 
@@ -185,15 +188,7 @@ nav {
   box-shadow: 1px 2px 5px 2px grey;
 }
 
-.grid-index-b1 {
-  grid-area: area1;
-}
-.grid-index-b2 {
-  grid-area: area2;
-}
-.grid-index-b3 {
-  grid-area: area3;
-}
+
 
 /*** Nosotros FLEX***/
 
@@ -202,6 +197,7 @@ nav {
   flex-flow: row wrap;
   justify-content: space-evenly;
   gap: 15px;
+  padding: 30px;
   
 }
 
@@ -231,70 +227,123 @@ nav {
 
 /*** Desarrollos inmobiliarios***/
 
-.galery-nav-button li {
-  text-align: center;
-  display: inline-block;
-  box-shadow: 1px 1px 2px 1px grey;
-  font-family: "Lora";
-  text-decoration: none;
-}
-
 .galeria {
   padding: 10px;
   
 }
 
-.galeria-comercial {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-areas: 
-    'pic1 pic1 pic2'
-    'pic1 pic1 pic3';
+.galeria img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 1px 2px 5px 2px grey;
 }
 
-.pic1 {
-  grid-area: 'pic1';
+.galeria-comercial {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:auto;
+  justify-items: center;
+  align-items: center;
 }
-.pic2 {
-  grid-area: 'pic2';
+
+.galeria-industrial {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:auto;
+  justify-items: center;
+  align-items: center;
 }
-.pic3 {
-  grid-area: 'pic3';
+
+.galeria-residencial {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:auto;
+  justify-items: center;
+  align-items: center;
 }
-/*.pic4 {
-  grid-area: 'pic4';
+
+.galeria-multimedia {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:auto;
+  justify-items: center;
+  align-items: center;
 }
-.pic5 {
-  grid-area: 'pic5';
-}
-.pic6 {
-  grid-area: 'pic6';
-}
-.pic7 {
-  grid-area: 'pic7';
-}
-.pic8 {
-  grid-area: 'pic8';
-}
-.pic9 {
-  grid-area: 'pic9';
-}
-.pic10 {
-  grid-area: 'pic10';
-}
-.pic11 {
-  grid-area: 'pic11';
-}
-.pic12 {
-  grid-area: 'pic12';
-}
-.pic13 {
-  grid-area: 'pic13';
+
+.galeria-info {
+  padding: 8px;
 }
 
 /***  Fin desarrollos inmobiliarios ***/
 
+/***  contacto  ***/
+ol, ul {
+  padding-left: 0rem;
+}
+.contact-left {
+  background-color: #fde8e9;
+  justify-content: start;
+  align-items: center;  
+}
+
+.fomrulario-contacto {
+  display: flex;
+}
+
+.mensaje-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.button-form {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.contact-right {
+  background-color: #a17d74ec;
+  color: #fde8e9;
+  display: flex;
+  justify-content: center;
+  align-content:space-around;
+  padding: 45px;
+  border-radius: 5px;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info ul {
+  list-style-type: none;
+}
+
+.grid-contact {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  grid-template-areas: auto;
+  padding: 50px;
+}
+
+.grid-contact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px grey;
+}
+
+/*** fin contacto ***/
 .submenu {
   display: none;
 }
@@ -304,10 +353,119 @@ nav {
 
 footer {
   background-color: #beb2c8;
-  padding: 5px 0 0 0.25%;
+  
 }
 
-.footer-boton-formulario-contacto {
-  background-color: #afc2d5;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+.footer-info {
+  padding: 5px 20px;  
+}
+
+.footer-info ul {
+  list-style-type: none;
+}
+
+/*** Media queries ***/
+
+/*  tablet  */
+@media only screen and (max-width: 992px)
+{
+    .flex-box {
+      width: 360px;
+    }
+    .grid-contact {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(1,1fr);
+    }
+    .grid-index {
+      grid-template-columns: repeat(2,1fr);
+    }
+    .grid-index img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 2px grey;
+    }
+    
+    .galeria-comercial {
+      grid-template-columns: repeat(2,1fr);
+      
+    }
+
+    .galeria-industrial {
+      grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .galeria-residencial {
+      grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
+/*  mobile  */
+@media only screen and  (max-width: 480px)
+{
+  /*estilos generales*/
+  header img {
+    width: 65%;
+  }
+  .main-box {
+    margin-top: 114px;
+  }
+  /*index*/
+  .grid-index {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*nosotros*/
+  .vision-left {
+   background-color: #a8847c;
+   color:#fde8e9;
+  }
+  /*proyectos*/
+
+  /*galeria*/
+  .galeria-picture img {
+    width: 100%;
+  }
+
+  .galeria-comercial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .galeria-comercial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .galeria-industrial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .galeria-residencial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /*contacto*/
+
+
+
 }
