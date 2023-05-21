@@ -26,7 +26,7 @@
   --bs-btn-disabled-border-color: #a8847c;
 }
 
-/* reset para sacar estilos de mi CSS */
+/* reset estilos CSS */
 * {
   margin: 0;
   padding: 0;
@@ -37,11 +37,11 @@
 
 img {
   display: block;
-  max-width: 100%; /*adaptable al tamaño de la pantalla*/
+  max-width: 100%; 
   
 }
 
-/*detallo las fuentes */
+/* fuentes */
 h1 {
   font-family: "Poppins";
   text-align: center;
@@ -64,7 +64,6 @@ header {
   z-index: 10;
 }
 
-/*  encabezado v2    */
 /* menu de navegacion */
 
 .menu {
@@ -125,10 +124,9 @@ header {
 /*** Index con FLEXBOX ***/
 
 .flex-index {
-  display: flex; /*declaro el formato flexible*/
-  /*flex-direction: column; -- si quiero acomodar mis objetos en forma de columna*/
-  flex-wrap: wrap; /*hace que sea responsive al tamaño de la pantalla - tambien puedo usar el flex-flow: row wrap; */
-  justify-content: space-evenly; /* dejo espacio entre mis cajas  */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
   align-items: stretch;
   gap: 20px;
 }
@@ -369,13 +367,12 @@ footer {
 /*  tablet  */
 @media only screen and (max-width: 992px)
 {
+   /*estilos generales*/
     .flex-box {
       width: 360px;
     }
-    .grid-contact {
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: repeat(1,1fr);
-    }
+    
+     /*index*/
     .grid-index {
       grid-template-columns: repeat(2,1fr);
     }
@@ -386,7 +383,7 @@ footer {
       border-radius: 10px;
       box-shadow: 1px 2px 5px 2px grey;
     }
-    
+    /*galeria*/
     .galeria-comercial {
       grid-template-columns: repeat(2,1fr);
       
@@ -399,6 +396,12 @@ footer {
 
     .galeria-residencial {
       grid-template-columns: repeat(2,1fr);
+    }
+
+    /*contacto*/
+    .grid-contact {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(1,1fr);
     }
 }
 
