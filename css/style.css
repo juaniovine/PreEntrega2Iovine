@@ -88,7 +88,7 @@ header {
 
 .nav-link:hover {
   font-size: 1.05rem;
-  
+  font-weight: 500;
 }
 
 .formato-menu a {
@@ -123,6 +123,10 @@ header {
 
 /*** Index con FLEXBOX ***/
 
+.index-title {
+  height: 10dvh;
+}
+
 .flex-index {
   display: flex;
   flex-wrap: wrap; 
@@ -147,27 +151,83 @@ header {
 }
 .top-left {
   background-color: #fde8e9;
-    
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px grey;
 }
 
 .top-right {
   background-color: #a17d74ec;
   color: #fde8e9;
-  
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px grey;
 }
 
 .middle-left {
   background-color: #a17d74ec;
   color: #fde8e9;
-  
- 
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px grey;
 }
 
 .middle-right {
   background-color: #fde8e9;
-
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px grey;  
 }
 
+
+/***  Index pilares ***/
+
+.index-pilares {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 20px;
+  height: 33dvh;
+  background-color: #e4cad4ef;
+  padding: 50px;
+  margin-top: 40px;
+}
+
+.index-pilares img {
+  width: 40%;
+  height: auto;
+  
+}
+
+.columna-pilares {
+  display: flex;
+  flex-direction: column;
+}
+
+.pilar1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 320px;
+}
+
+.pilar2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 320px;
+}
+.pilar3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 320px;
+}
+
+/*** grid imagenes ***/
 
 .grid-index {
   display: grid;
