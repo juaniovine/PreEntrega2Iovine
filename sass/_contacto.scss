@@ -1,0 +1,62 @@
+/***  contacto  ***/
+ol, ul {
+    padding-left: 0rem;
+  }
+  
+  .contact-left {
+    background-color: #fde8e9;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .fomrulario-contacto {
+    display: flex;
+  }
+  
+  .mensaje-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .button-form {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .contact-right {
+    background-color: rgba(161, 125, 116, 0.9254901961);
+    color: #fde8e9;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    padding: 45px;
+    border-radius: 5px;
+  }
+  
+  .contact-info {
+    text-align: left;
+  }
+  
+  .contact-info ul {
+    list-style-type: none;
+  }
+  
+  .grid-contact {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: auto;
+    padding: 50px;
+  }
+  
+  .grid-contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px grey;
+  }
+  
+  /*** fin contacto ***/

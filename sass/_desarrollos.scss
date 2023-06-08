@@ -1,0 +1,55 @@
+/*** Desarrollos inmobiliarios***/
+.galeria {
+    padding: 10px;
+  }
+  
+  .galeria img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 1px 2px 5px 2px grey;
+  }
+  
+  .galeria-comercial {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .galeria-industrial {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .galeria-residencial {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .galeria-multimedia {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .galeria-info {
+    padding: 8px;
+  }
+  
+  /***  Fin desarrollos inmobiliarios ***/
+  

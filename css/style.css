@@ -1,9 +1,7 @@
 /* comentario */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,100;0,400;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
-
 /*** estilos generales ***/
-
-:root{
+:root {
   --bs-breakpoint-sm: 480px;
   --bs-link-color: #56423d;
   --bs-link-hover-color: #56423d;
@@ -30,15 +28,12 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
 
 /*** configuracion de imagenes ***/
-
 img {
   display: block;
-  max-width: 100%; 
-  
+  max-width: 100%;
 }
 
 /* fuentes */
@@ -55,7 +50,6 @@ p {
   font-family: "Inter";
 }
 
-
 header {
   min-height: 5px;
   top: 0;
@@ -65,13 +59,10 @@ header {
 }
 
 /* menu de navegacion */
-
 .menu {
   display: flex;
   justify-content: space-between;
-  
 }
-
 
 .navbar {
   padding: 0;
@@ -98,7 +89,6 @@ header {
   background-color: #56423d;
   text-decoration: none;
   padding-right: 15px;
-  
 }
 
 .main-box {
@@ -121,15 +111,31 @@ header {
   display: inline;
 }
 
-/*** Index con FLEXBOX ***/
+.submenu {
+  display: none;
+}
 
+/***  configuracion de footer ***/
+footer {
+  background-color: #beb2c8;
+}
+
+.footer-info {
+  padding: 5px 20px;
+}
+
+.footer-info ul {
+  list-style-type: none;
+}
+
+/*** Index con FLEXBOX ***/
 .index-title {
   height: 10dvh;
 }
 
 .flex-index {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
   gap: 20px;
@@ -149,6 +155,7 @@ header {
 .flex-box img {
   border-radius: 10px;
 }
+
 .top-left {
   background-color: #fde8e9;
   border-radius: 10px;
@@ -156,14 +163,14 @@ header {
 }
 
 .top-right {
-  background-color: #a17d74ec;
+  background-color: rgba(161, 125, 116, 0.9254901961);
   color: #fde8e9;
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
 }
 
 .middle-left {
-  background-color: #a17d74ec;
+  background-color: rgba(161, 125, 116, 0.9254901961);
   color: #fde8e9;
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
@@ -172,20 +179,18 @@ header {
 .middle-right {
   background-color: #fde8e9;
   border-radius: 10px;
-  box-shadow: 1px 2px 5px 2px grey;  
+  box-shadow: 1px 2px 5px 2px grey;
 }
 
-
 /***  Index pilares ***/
-
 .index-pilares {
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   gap: 20px;
   height: 33dvh;
-  background-color: #e4cad4ef;
+  background-color: rgba(228, 202, 212, 0.937254902);
   padding: 50px;
   margin-top: 40px;
 }
@@ -193,7 +198,6 @@ header {
 .index-pilares img {
   width: 40%;
   height: auto;
-  
 }
 
 .columna-pilares {
@@ -218,6 +222,7 @@ header {
   width: 250px;
   height: 320px;
 }
+
 .pilar3 {
   display: flex;
   flex-direction: column;
@@ -228,11 +233,10 @@ header {
 }
 
 /*** grid imagenes ***/
-
 .grid-index {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: auto;
   padding: 50px;
@@ -241,22 +245,18 @@ header {
 .grid-index img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
 }
 
-
-
 /*** Nosotros FLEX***/
-
 .nosotros-main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   gap: 15px;
   padding: 30px;
-  
 }
 
 .mision-left {
@@ -268,7 +268,7 @@ header {
 }
 
 .vision-left {
-  width: 500px; 
+  width: 500px;
 }
 
 .vision-right {
@@ -284,10 +284,8 @@ header {
 }
 
 /*** Desarrollos inmobiliarios***/
-
 .galeria {
   padding: 10px;
-  
 }
 
 .galeria img {
@@ -301,8 +299,8 @@ header {
 .galeria-comercial {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows:auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   justify-items: center;
   align-items: center;
 }
@@ -310,8 +308,8 @@ header {
 .galeria-industrial {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows:auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   justify-items: center;
   align-items: center;
 }
@@ -319,8 +317,8 @@ header {
 .galeria-residencial {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows:auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   justify-items: center;
   align-items: center;
 }
@@ -328,8 +326,8 @@ header {
 .galeria-multimedia {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows:auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   justify-items: center;
   align-items: center;
 }
@@ -339,15 +337,15 @@ header {
 }
 
 /***  Fin desarrollos inmobiliarios ***/
-
 /***  contacto  ***/
 ol, ul {
   padding-left: 0rem;
 }
+
 .contact-left {
   background-color: #fde8e9;
   justify-content: start;
-  align-items: center;  
+  align-items: center;
 }
 
 .fomrulario-contacto {
@@ -363,15 +361,14 @@ ol, ul {
 .button-form {
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 .contact-right {
-  background-color: #a17d74ec;
+  background-color: rgba(161, 125, 116, 0.9254901961);
   color: #fde8e9;
   display: flex;
   justify-content: center;
-  align-content:space-around;
+  align-content: space-around;
   padding: 45px;
   border-radius: 5px;
 }
@@ -387,7 +384,7 @@ ol, ul {
 .grid-contact {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas: auto;
   padding: 50px;
@@ -396,81 +393,48 @@ ol, ul {
 .grid-contact img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
 }
 
 /*** fin contacto ***/
-.submenu {
-  display: none;
-}
-
-
-/***  configuracion de footer ***/
-
-footer {
-  background-color: #beb2c8;
-  
-}
-
-.footer-info {
-  padding: 5px 20px;  
-}
-
-.footer-info ul {
-  list-style-type: none;
-}
-
 /*** Media queries ***/
-
 /*  tablet  */
-@media only screen and (max-width: 992px)
-{
-   /*estilos generales*/
-    .flex-box {
-      width: 360px;
-    }
-    
-     /*index*/
-    .grid-index {
-      grid-template-columns: repeat(2,1fr);
-    }
-    .grid-index img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
-      border-radius: 10px;
-      box-shadow: 1px 2px 5px 2px grey;
-    }
-    /*galeria*/
-    .galeria-comercial {
-      grid-template-columns: repeat(2,1fr);
-      
-    }
-
-    .galeria-industrial {
-      grid-template-columns: repeat(2,1fr);
-
-    }
-
-    .galeria-residencial {
-      grid-template-columns: repeat(2,1fr);
-    }
-
-    /*contacto*/
-    .grid-contact {
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: repeat(1,1fr);
-    }
+@media only screen and (max-width: 992px) {
+  /*estilos generales*/
+  .flex-box {
+    width: 360px;
+  }
+  /*index*/
+  .grid-index {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-index img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px grey;
+  }
+  /*galeria*/
+  .galeria-comercial {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galeria-industrial {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galeria-residencial {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*contacto*/
+  .grid-contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
-
-
-
-
 /*  mobile  */
-@media only screen and  (max-width: 480px)
-{
+@media only screen and (max-width: 480px) {
   /*estilos generales*/
   header img {
     width: 65%;
@@ -483,52 +447,41 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
   .grid-contact {
     display: flex;
     flex-direction: column;
   }
-
   /*nosotros*/
   .vision-left {
-   background-color: #a8847c;
-   color:#fde8e9;
+    background-color: #a8847c;
+    color: #fde8e9;
   }
   /*proyectos*/
-
   /*galeria*/
   .galeria-picture img {
     width: 100%;
   }
-
   .galeria-comercial {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .galeria-comercial {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
-
   .galeria-industrial {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
   }
-
   .galeria-residencial {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
   /*contacto*/
-
-
-
 }
+
+/*# sourceMappingURL=style.css.map */

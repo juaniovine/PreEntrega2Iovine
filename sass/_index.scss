@@ -1,0 +1,122 @@
+/*** Index con FLEXBOX ***/
+.index-title {
+    height: 10dvh;
+  }
+  
+  .flex-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  .flex-box {
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: large;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .flex-box img {
+    border-radius: 10px;
+  }
+  
+  .top-left {
+    background-color: #fde8e9;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px grey;
+  }
+  
+  .top-right {
+    background-color: rgba(161, 125, 116, 0.9254901961);
+    color: #fde8e9;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px grey;
+  }
+  
+  .middle-left {
+    background-color: rgba(161, 125, 116, 0.9254901961);
+    color: #fde8e9;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px grey;
+  }
+  
+  .middle-right {
+    background-color: #fde8e9;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px grey;
+  }
+  
+  /***  Index pilares ***/
+  .index-pilares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    height: 33dvh;
+    background-color: rgba(228, 202, 212, 0.937254902);
+    padding: 50px;
+    margin-top: 40px;
+  }
+  
+  .index-pilares img {
+    width: 40%;
+    height: auto;
+  }
+  
+  .columna-pilares {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pilar1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 320px;
+  }
+  
+  .pilar2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 320px;
+  }
+  
+  .pilar3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 320px;
+  }
+  
+  /*** grid imagenes ***/
+  .grid-index {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: auto;
+    padding: 50px;
+  }
+  
+  .grid-index img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px grey;
+  }
+  
