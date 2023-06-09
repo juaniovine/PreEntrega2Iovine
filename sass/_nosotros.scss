@@ -1,33 +1,45 @@
 /*** Nosotros FLEX***/
 .nosotros-main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    gap: 15px;
-    padding: 30px;
-  }
-  
-  .mision-left {
-    width: 500px;
-  }
-  
-  .mision-right {
-    width: 500px;
-  }
-  
-  .vision-left {
-    width: 500px;
-  }
-  
-  .vision-right {
-    width: 500px;
-  }
-  
-  .valores-left {
-    width: 500px;
-  }
-  
-  .valores-right {
-    width: 500px;
-  }
-  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  padding: 30px;
+}
+
+.mision-left {
+  width: 500px;
+  padding: 10px;
+
+}
+
+.mision-right {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-left {
+  width: 500px;
+  padding: 10px;
+}
+
+.vision-right {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valores-left {
+  width: 500px;
+  padding: 10px;
+}
+
+.valores-right {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

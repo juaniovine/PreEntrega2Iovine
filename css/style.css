@@ -261,26 +261,63 @@ footer {
 
 .mision-left {
   width: 500px;
+  padding: 10px;
 }
 
 .mision-right {
   width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vision-left {
   width: 500px;
+  padding: 10px;
 }
 
 .vision-right {
   width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .valores-left {
   width: 500px;
+  padding: 10px;
 }
 
 .valores-right {
   width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*** Inicio Proyectos ***/
+.diseno {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.planificacion {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.construcciones {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.control-calidad {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 /*** Desarrollos inmobiliarios***/
@@ -458,6 +495,9 @@ ol, ul {
   }
   /*proyectos*/
   /*galeria*/
+  .justify-content-start {
+    font-size: small;
+  }
   .galeria-picture img {
     width: 100%;
   }
