@@ -1,0 +1,51 @@
+/* menu de navegacion */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+    
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbar-collapse {
+    justify-content: right;
+    padding-right: 30px;
+  }
+  
+  .container-fluid {
+    background-color: #56423d;
+  }
+  
+  .nav-link:hover {
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+  
+  .formato-menu a {
+    color: #fde8e9;
+    border-width: none;
+    border-radius: 1%;
+    background-color: #56423d;
+    text-decoration: none;
+    padding-right: 15px;
+    
+  }
+    
+  .menu li {
+    display: inline-block;
+    margin: 0px 7px;
+    font-size: 1rem;
+    font-family: "Lora";
+    padding-top: 70px;
+  }
+  
+  .logo-menu {
+    display: inline;
+  }
+  
+  .submenu {
+    display: none;
+  }

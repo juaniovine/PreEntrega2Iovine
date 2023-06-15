@@ -30,17 +30,22 @@
     background-color: #fde8e9;
     border-radius: 10px;
     box-shadow: 1px 2px 5px 2px grey;
+    overflow: hidden;
+    transition: 0,5s;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
   
   .top-right {
-    background-color: rgba(161, 125, 116, 0.9254901961);
+    background-image: linear-gradient(to right, $box-gradient);
     color: #fde8e9;
     border-radius: 10px;
     box-shadow: 1px 2px 5px 2px grey;
   }
   
   .middle-left {
-    background-color: rgba(161, 125, 116, 0.9254901961);
+    background-image: linear-gradient(to left, $box-gradient);
     color: #fde8e9;
     border-radius: 10px;
     box-shadow: 1px 2px 5px 2px grey;
@@ -50,6 +55,11 @@
     background-color: #fde8e9;
     border-radius: 10px;
     box-shadow: 1px 2px 5px 2px grey;
+    overflow: hidden;
+    transition: 0,5s;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
   
   /***  Index pilares ***/
@@ -63,6 +73,7 @@
     background-color: rgba(228, 202, 212, 0.937254902);
     padding: 50px;
     margin-top: 40px;
+    border-radius: 7px;
   }
   
   .index-pilares img {
