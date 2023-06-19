@@ -1,0 +1,37 @@
+// Extend
+
+
+
+
+
+
+// MIXIN
+
+@mixin display-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+@mixin flex-pilar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 320px;
+}
+
+@mixin us-right {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-shadow {
+    box-shadow: 1px 2px 5px 2px grey;
+}

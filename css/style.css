@@ -160,7 +160,7 @@ footer {
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
   overflow: hidden;
-  transition: 0, 5s;
+  transition: 1s;
 }
 .top-left:hover {
   transform: scale(1.1);
@@ -185,7 +185,7 @@ footer {
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
   overflow: hidden;
-  transition: 0, 5s;
+  transition: 1s;
 }
 .middle-right:hover {
   transform: scale(1.1);
@@ -258,6 +258,11 @@ footer {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
+  overflow: hidden;
+  transition: 1s;
+}
+.grid-index img:hover {
+  transform: scale(1.1);
 }
 
 /*** Nosotros FLEX***/

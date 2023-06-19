@@ -29,9 +29,9 @@
   .top-left {
     background-color: #fde8e9;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 2px grey;
+    @include box-shadow;
     overflow: hidden;
-    transition: 0,5s;
+    transition: 1s;
     &:hover{
       transform: scale(1.1);
     }
@@ -41,14 +41,14 @@
     background-image: linear-gradient(to right, $box-gradient);
     color: #fde8e9;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 2px grey;
+    @include box-shadow;
   }
   
   .middle-left {
     background-image: linear-gradient(to left, $box-gradient);
     color: #fde8e9;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 2px grey;
+    @include box-shadow;
   }
   
   .middle-right {
@@ -56,7 +56,7 @@
     border-radius: 10px;
     box-shadow: 1px 2px 5px 2px grey;
     overflow: hidden;
-    transition: 0,5s;
+    transition: 1s;
     &:hover{
       transform: scale(1.1);
     }
@@ -87,30 +87,15 @@
   }
   
   .pilar1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 320px;
+    @include flex-pilar;
   }
   
   .pilar2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 320px;
+    @include flex-pilar;
   }
   
   .pilar3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 320px;
+    @include flex-pilar;
   }
   
   /*** grid imagenes ***/
@@ -128,6 +113,11 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 2px grey;
+    @include box-shadow;
+    overflow: hidden;
+    transition: 1s;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
   
