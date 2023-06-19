@@ -57,6 +57,12 @@ header {
   z-index: 10;
 }
 
+.project-flex, .control-calidad, .construcciones, .planificacion, .diseno {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
 /* menu de navegacion */
 .menu {
   display: flex;
@@ -310,32 +316,7 @@ footer {
   align-items: center;
 }
 
-/*** Inicio Proyectos ***/
-.diseno {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-
-.planificacion {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-
-.construcciones {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-
-.control-calidad {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-
-/*** Desarrollos inmobiliarios***/
+/*** Inicio Proyectos ***/ /*** Desarrollos inmobiliarios***/
 .galeria {
   padding: 10px;
 }

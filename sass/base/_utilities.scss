@@ -1,7 +1,10 @@
 // Extend
 
-
-
+.project-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
 
 
 
@@ -35,3 +38,4 @@
 @mixin box-shadow {
     box-shadow: 1px 2px 5px 2px grey;
 }
+
